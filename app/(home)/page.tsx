@@ -1,10 +1,14 @@
-import { staticArtists, staticTopMusics } from "@/constants/static-data";
+import {
+  staticArtists,
+  staticTopMusics,
+  staticTrends,
+} from "@/constants/static-data";
 import Index from "@/components/index/Index";
 
 const HomePage = () => {
   return (
     <Index
-      trends={staticTopMusics}
+      trends={staticTrends}
       topArtists={staticArtists}
       topMusics={staticTopMusics}
     />

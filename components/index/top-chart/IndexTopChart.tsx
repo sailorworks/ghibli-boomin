@@ -1,10 +1,9 @@
 "use client";
 import { useAppStore } from "@/store/app-store";
-
 import MainCard from "@/components/ui/main-card/MainCard";
 import IndexTopChartItem from "./IndexTopChartItem";
-
 import styles from "./IndexTopChart.module.scss";
+import { Music } from "@/types/component-types"; // Add this import
 
 const PLAY_LIST_ID = "top-charts-musics-playlist";
 

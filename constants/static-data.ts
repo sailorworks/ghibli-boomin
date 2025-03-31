@@ -1,3 +1,6 @@
+import { Music as TrendMusic } from "@/types/music";
+import { Artist, Music } from "@/types/component-types";
+
 export const staticArtists: Artist[] = [
   {
     id: 1,
@@ -15,6 +18,7 @@ export const staticArtists: Artist[] = [
       },
     ],
   },
+
   {
     id: 2,
     name: "Charlie Puth",
@@ -128,3 +132,10 @@ export const staticTopMusics: Music[] = [
     playedCount: 0,
   },
 ];
+export const staticTrends: TrendMusic[] = staticTopMusics.map((music) => ({
+  id: String(music.id),
+  title: music.name,
+  artist: music.artist,
+  url: music.src,
+  cover: music.coverImage,
+}));

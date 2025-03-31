@@ -4,7 +4,7 @@ import IndexTrendsSlide from "./IndexTrendsSlide";
 import { Music } from "@/types/music";
 
 interface IndexTrendsProps {
-  trendsInfo: Music[];
+  trendsInfo: Partial<Music>[] | any[]; // Make it more flexible
 }
 
 const IndexTrends = ({ trendsInfo }: IndexTrendsProps) => {

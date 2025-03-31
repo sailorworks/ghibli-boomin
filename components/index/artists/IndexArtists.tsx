@@ -1,7 +1,7 @@
 import MainCard from "@/components/ui/main-card/MainCard";
 import IndexArtistItem from "./IndexArtistItem";
-
 import styles from "./IndexArtists.module.scss";
+import { Artist } from "@/types/component-types"; // Add this import
 
 const IndexArtits = ({ artists }: { artists: Artist[] }) => {
   return (
