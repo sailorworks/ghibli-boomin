@@ -6,7 +6,7 @@ const IndexTrendsSlide = () => {
     <div className={styles.slide}>
       <Image
         className={styles.img}
-        src="/images/music/ghibli-background.gif"
+        src="/images/background.gif"
         width={1920}
         height={1080}
         loading="eager"
