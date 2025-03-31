@@ -1,8 +1,13 @@
 "use client";
 import styles from "./IndexTrends.module.scss";
 import IndexTrendsSlide from "./IndexTrendsSlide";
+import { Music } from "@/types/music";
 
-const IndexTrends = () => {
+interface IndexTrendsProps {
+  trendsInfo: Music[];
+}
+
+const IndexTrends = ({ trendsInfo }: IndexTrendsProps) => {
   return (
     <div className={styles.slider}>
       <IndexTrendsSlide />
